@@ -31,10 +31,7 @@ startTimer() {
     document.getElementById("startTimer").innerHTML = "Start"
     this.counter = true 
 
-  } else { 
-        
-        this.counter = false
- }
+  } 
 }
 
 stopTimer() {
