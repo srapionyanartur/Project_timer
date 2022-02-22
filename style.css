@@ -1,0 +1,44 @@
+
+#container {
+  display: flex; 
+  justify-content: center;
+  margin-top: 500px;
+   
+   }
+   
+#timer {
+   display: flex;
+   position:relative;
+   bottom: 250px;
+   left: 180px;
+   font-size: 100px;
+           
+         
+   }
+
+   /* #timer1 {
+      display: flex;
+      position: relative;
+      bottom: 250px;
+      left: 180px;
+      font-size: 100px;
+              
+   } */
+
+#startTimer {
+   width: 100px;  
+   background-color: rgb(245, 49, 49);  
+   font-size: 20px;  
+   border-color:rgb(245, 49, 49); 
+    
+   }
+   
+#stopTimer { 
+      width: 100px;  
+      background-color: rgb(245, 49, 49);
+      border-color:rgb(245, 49, 49);  
+      font-size: 20px;  
+      margin-left: 100px;
+      width: 100px; 
+      }
+  
