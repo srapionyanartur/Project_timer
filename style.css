@@ -10,35 +10,50 @@
    display: flex;
    position:relative;
    bottom: 250px;
-   left: 180px;
+   left: 200px;
    font-size: 100px;
            
          
    }
 
-   /* #timer1 {
-      display: flex;
-      position: relative;
-      bottom: 250px;
-      left: 180px;
-      font-size: 100px;
-              
-   } */
 
 #startTimer {
-   width: 100px;  
+   width: 120px; 
+   height: 30px; 
    background-color: rgb(245, 49, 49);  
-   font-size: 20px;  
-   border-color:rgb(245, 49, 49); 
-    
+   font-size: 18px;
+   font-weight: bold;  
+   border: none; 
+   border-radius: 5px;
    }
+
+   #startTimer:hover {
+      width: 120px; 
+      height: 30px;  
+      background-color: rgb(255, 124, 124);  
+      font-size: 18px;  
+      
+       
+      }
    
 #stopTimer { 
-      width: 100px;  
+      width: 120px;
+      height: 30px;  
       background-color: rgb(245, 49, 49);
       border-color:rgb(245, 49, 49);  
-      font-size: 20px;  
+      font-size: 18px;
+      font-weight: bold;  
       margin-left: 100px;
-      width: 100px; 
+      border: none; 
+      border-radius: 5px;
       }
+
+      #stopTimer:hover {
+         width: 120px; 
+         height: 30px;  
+         background-color: rgb(255, 124, 124);  
+         font-size: 18px;  
+         
+          
+         }
   

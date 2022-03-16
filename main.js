@@ -10,17 +10,23 @@ class Timer {
 
 
  runTimer() {
-
+ 
   this.minutes--
- 
-  while (this.minutes <= -1 ) {
 
-    alert ("Time is finished")
+    if (this.minutes < 0) {
+
+      alert ("Time is finished")
+      
+      clearInterval(this.interval)
+      this.minutes = 5
+      
+    startTimer()
+    stopTimer()
+    
+  } 
+  
  
-  
-  }
-  
-  document.getElementById("timer").innerHTML = this.minutes
+document.getElementById("timer").innerHTML = this.minutes
 //document.getElementById("timer1").innerHTML = this.minutes  
 }
 
@@ -31,7 +37,7 @@ startTimer() {
     document.getElementById("startTimer").innerHTML = "Start"
     this.counter = true 
 
-  } 
+  }
 }
 
 stopTimer() {
@@ -40,14 +46,16 @@ stopTimer() {
   window.clearInterval(this.interval)
   document.getElementById("stopTimer").innerHTML = "Stop"
   this.counter = false
- 
-  }
- } 
 
+  
+    }
+  } 
 }
 
-   const timer = new Timer( 60,null,false,)
-// const timer1 = new Timer( 5,null,false,)
+
+
+   const timer = new Timer(5,null,false,)
+// const timer1 = new Timer(60,null,false,)
 
 startTimer = ()=>timer.startTimer()
 stopTimer = ()=>timer.stopTimer()
